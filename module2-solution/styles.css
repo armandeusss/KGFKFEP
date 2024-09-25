@@ -1,0 +1,74 @@
+body{
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.section {
+    position:relative;
+    padding: 5px;
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+h2{
+    width:min-content;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0;
+    padding-inline: 5%;
+    border-color: black;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+}
+
+p{
+    position:relative;
+    padding-top: 20px;
+}
+
+#tacos{
+    background-color: #d59898;
+}
+
+#sushi{
+    background-color: #c14543;
+    color: white
+}
+
+#pizza{
+    background-color: #e5d198
+}
+
+/* LARGE DEVICES */
+@media (min-width: 992px) {   
+    .col-lg-1{
+        float: left;
+        width: 33%;
+    }   
+}
+
+/* MEDIUM DEVICES */
+@media (min-width: 768px) and (max-width: 991px) {   
+    .col-md-1, .col-md-2{
+        float:left;
+    }
+    .col-md-1{
+        width: 50%;
+    } 
+    .col-md-2{
+        width: 100%;
+    }  
+}
+
+/* SMALL DEVICES */
